@@ -11,7 +11,7 @@ Nah buat temen-temen yang belum tahu, software node itu ada 2 jenis. Yang pertam
 
 Apa cara kerjanya sama? Kurang lebih mirip, bedanya kalau GUI lebih praktis karena sudah jadi satu dengan aplikasi atau software node kita. Sedangkan CLI terpisah, dan dia ada di folder node kita dengan nama 'bitcoin-cli'. Karena lebih praktis pakai GUI, kita pakai GUI saja untuk semua pembahasan mengenai RPC Console ini kedepannya.
 
-Cara bukanya gimana bang? Yang pertama kita pasti buka software node clientnya dulu. Entah Core atau Knots bebas, dan saya pakai Knots sebagai contoh ya. Kurang lebih sama.
+Cara bukanya bagaimana? Yang pertama kita pasti buka software node clientnya dulu. Entah Core atau Knots bebas, dan saya pakai Knots sebagai contoh ya. Kurang lebih sama.
 
 <img width="1366" height="729" alt="First Page" src="https://github.com/user-attachments/assets/28d42cee-86d6-4d94-a1e6-cb3c23f5f3cb" />
 
