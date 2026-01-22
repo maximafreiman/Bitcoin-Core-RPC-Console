@@ -103,7 +103,7 @@ Function: Displays the total amount of data sent and received. We can see how mu
 
 In short: This is the bandwidth contribution footprint of our node.
 
-**==UNTUK CEK STATUS MEMPOOL DAN TRANSAKSI**
+**==FOR CHECKING THE STATUS OF THE MEMPOOL AND TRANSACTIONS**
 
 11. `getrawmempool`
 
