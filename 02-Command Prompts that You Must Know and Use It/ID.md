@@ -167,3 +167,7 @@ Fungsi: Menampilkan info seputar mining.
 Menunjukkan hashrate jaringan, difficulty, dan status mining node kita.
 
 Intinya: Ini adalah status produksi blok Bitcoin.
+
+
+Yak, demikianlah untuk command prompts yang bisa kita aplikasikan untuk tahap awal. Nanti mungkin aku juga akan aku kasih info mengenai beberapa prompt tambahan yang bisa kita pakai. Sekian, thank u.
+
