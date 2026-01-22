@@ -52,21 +52,25 @@ Intinya: Ini adalah “dashboard kesehatan” node kita.
 2. `getbestblockhash`
 
 Fungsi: Menampilkan hash dari blok paling terbaru. Bitcoin menyusun data dalam bentuk rantai blok. Command ini menunjukkan “ujung rantai” saat ini, yaitu blok terakhir yang dianggap valid oleh node kita.
+
 Intinya: Ini adalah penanda posisi terbaru blockchain.
 
 3. `getblockcount`
 
 Fungsi: Menampilkan jumlah blok dari genesis sampai sekarang. Setiap blok punya nomor (height). Command ini menunjukkan node kita sedang ada di blok ke berapa.
+
 Intinya: Ini adalah “jumlah aktual” blockchain dalam bentuk angka.
 
 4. `getblock <blockhash>`
 
 Fungsi: Menampilkan isi lengkap dari sebuah blok. Kita bisa melihat transaksi di dalam blok, waktu dibuat, ukuran, miner, dan berbagai data teknis lainnya.
+
 Intinya: Ini seperti “membuka isi kotak” dari satu blok Bitcoin.
 
 5. `getdifficulty`
 
 Fungsi: Menampilkan tingkat kesulitan mining saat ini. Semakin tinggi angkanya, semakin sulit bagi miner menemukan blok baru. Ini menyesuaikan otomatis agar rata-rata blok tetap muncul setiap ±10 menit.
+
 Intinya: Ini adalah pengukur seberapa keras kerja miner di jaringan.
 
 **BUAT CARI INFORMASI TENTANG KONDISI NODE DAN NETWORK**
