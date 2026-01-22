@@ -1,1 +1,0 @@
-Ya, halo guys.
