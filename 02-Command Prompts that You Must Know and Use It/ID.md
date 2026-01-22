@@ -42,3 +42,144 @@ So, berikut ini adalah 20 Command Prompts yang udah dipilah-pilah dan bisa kita 
 
 ---
 
+**BUAT CARI INFORMASI BLOCK DAN BLOCKCHAIN (ATAU TIMECHAIN SEBENERNYA) TERBARU***
+
+1. `getblockchaininfo`
+
+Fungsi: Menampilkan kondisi lengkap blockchain di node kita. Command ini memberi gambaran apakah node sudah sinkron dengan blockchain terbaru atau belum, sedang di mainnet/testnet, apakah node kita pruned, dan seberapa besar data blockchain yang sudah tersimpan.
+Intinya: Ini adalah “dashboard kesehatan” node kita.
+
+2. `getbestblockhash`
+
+Fungsi: Menampilkan hash dari blok paling terbaru. Bitcoin menyusun data dalam bentuk rantai blok. Command ini menunjukkan “ujung rantai” saat ini, yaitu blok terakhir yang dianggap valid oleh node kita.
+Intinya: Ini adalah penanda posisi terbaru blockchain.
+
+3. `getblockcount`
+
+Fungsi: Menampilkan jumlah blok dari genesis sampai sekarang. Setiap blok punya nomor (height). Command ini menunjukkan node kita sedang ada di blok ke berapa.
+Intinya: Ini adalah “jumlah aktual” blockchain dalam bentuk angka.
+
+4. `getblock <blockhash>`
+
+Fungsi: Menampilkan isi lengkap dari sebuah blok. Kita bisa melihat transaksi di dalam blok, waktu dibuat, ukuran, miner, dan berbagai data teknis lainnya.
+Intinya: Ini seperti “membuka isi kotak” dari satu blok Bitcoin.
+
+5. `getdifficulty`
+
+Fungsi: Menampilkan tingkat kesulitan mining saat ini. Semakin tinggi angkanya, semakin sulit bagi miner menemukan blok baru. Ini menyesuaikan otomatis agar rata-rata blok tetap muncul setiap ±10 menit.
+Intinya: Ini adalah pengukur seberapa keras kerja miner di jaringan.
+
+**BUAT CARI INFORMASI TENTANG KONDISI NODE DAN NETWORK**
+
+6. getnetworkinfo
+
+Fungsi: Menampilkan informasi jaringan node kamu.
+Penjelasan:
+Menunjukkan versi Bitcoin Core, fitur jaringan yang aktif, dan status koneksi.
+Intinya: Ini adalah identitas node kamu di dunia Bitcoin.
+
+7. getpeerinfo
+
+Fungsi: Menampilkan daftar node lain yang terhubung ke node kamu.
+Penjelasan:
+Kamu bisa lihat IP, negara, latency, dan apakah peer itu inbound atau outbound.
+Intinya: Ini adalah “daftar teman” node kamu di jaringan.
+
+8. getconnectioncount
+
+Fungsi: Menampilkan jumlah koneksi aktif.
+Penjelasan:
+Semakin banyak koneksi, semakin kuat node kamu dalam menerima dan menyebarkan data.
+Intinya: Ini adalah jumlah jalur komunikasi node kamu.
+
+9. ping
+
+Fungsi: Menguji koneksi ke peer.
+Penjelasan:
+Node kamu mengirim sinyal ke peer untuk memastikan mereka masih aktif dan responsif.
+Intinya: Ini adalah “cek apakah temanmu masih online.”
+
+10. getnettotals
+
+Fungsi: Menampilkan total data yang dikirim dan diterima.
+Penjelasan:
+Kamu bisa lihat seberapa besar kontribusi node kamu dalam menyebarkan data blockchain.
+Intinya: Ini adalah jejak kontribusi bandwidth node kamu.
+
+3️⃣ Mempool & Transaksi
+
+(Memahami pergerakan uang di jaringan)
+
+11. getrawmempool
+
+Fungsi: Menampilkan daftar transaksi yang belum masuk blok.
+Penjelasan:
+Mempool adalah “ruang tunggu” transaksi sebelum ditambang. Command ini menunjukkan antreannya.
+Intinya: Ini adalah antrian transaksi Bitcoin.
+
+12. getmempoolinfo
+
+Fungsi: Menampilkan kondisi mempool.
+Penjelasan:
+Kamu bisa lihat ukuran mempool, jumlah transaksi, dan tekanan fee.
+Intinya: Ini adalah indikator macet atau lancarnya jaringan.
+
+13. getrawtransaction "txid"
+
+Fungsi: Mengambil data mentah sebuah transaksi.
+Penjelasan:
+Menampilkan transaksi dalam format teknis (hex) langsung dari jaringan atau blockchain.
+Intinya: Ini adalah mengambil “bentuk asli” transaksi.
+
+14. decoderawtransaction "hex"
+
+Fungsi: Mengubah transaksi mentah jadi format yang bisa dibaca manusia.
+Penjelasan:
+Kamu bisa lihat input, output, nilai BTC, dan alamat tujuan.
+Intinya: Ini adalah penerjemah bahasa mesin ke bahasa manusia.
+
+15. sendrawtransaction "hex"
+
+Fungsi: Mengirim transaksi ke jaringan Bitcoin.
+Penjelasan:
+Setelah transaksi ditandatangani, command ini akan menyebarkannya ke node lain.
+Intinya: Ini adalah “lepas transaksi ke dunia Bitcoin.”
+
+4️⃣ Wallet & Mining
+
+(Interaksi langsung dengan Bitcoin)
+
+16. getwalletinfo
+
+Fungsi: Menampilkan status wallet.
+Penjelasan:
+Menunjukkan saldo, jumlah transaksi, dan apakah wallet terkunci atau tidak.
+Intinya: Ini adalah dashboard dompet kamu.
+
+17. getnewaddress
+
+Fungsi: Membuat alamat Bitcoin baru.
+Penjelasan:
+Alamat baru ini bisa kamu pakai untuk menerima BTC dengan privasi lebih baik.
+Intinya: Ini adalah generator rekening Bitcoin.
+
+18. getbalance
+
+Fungsi: Menampilkan saldo wallet.
+Penjelasan:
+Menunjukkan berapa BTC yang bisa kamu gunakan atau kirim.
+Intinya: Ini adalah cek isi dompet.
+
+19. sendtoaddress "address" amount
+
+Fungsi: Mengirim BTC ke alamat lain.
+Penjelasan:
+Node kamu akan membuat, menandatangani, dan mengirim transaksi ke jaringan.
+Intinya: Ini adalah tombol “kirim uang” Bitcoin.
+
+20. getmininginfo
+
+Fungsi: Menampilkan info seputar mining.
+Penjelasan:
+Menunjukkan hashrate jaringan, difficulty, dan status mining node kamu.
+Intinya: Ini adalah status produksi blok Bitcoin.
