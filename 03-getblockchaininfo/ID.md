@@ -23,7 +23,8 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
   
   `"bestblockhash": "000000000000000000001ecd8963323c01c98909d02600c2c4e230a7f1856598",`
   
-  "bits": "1701fca1",
+  `"bits": "1701fca1",`
+  
   "target": "00000000000000000001fca10000000000000000000000000000000000000000",
   "difficulty": 141668107417558.2,
   "time": 1769348377,
