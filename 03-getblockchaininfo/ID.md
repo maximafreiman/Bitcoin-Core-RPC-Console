@@ -15,7 +15,8 @@ Maka, hasilnya akan keluar seperti ini. (Ini adalah data blockchain per tanggal 
 
 Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artikel ini.
 
-  "chain": "main",
+  `"chain": "main",`
+  
   "blocks": 933732,
   "headers": 933732,
   "bestblockhash": "000000000000000000001ecd8963323c01c98909d02600c2c4e230a7f1856598",
@@ -66,3 +67,20 @@ Ini adalah hash (sebuah kode unik yang berasal dari data header block, dijadikan
 --
 
 **"bits": "1701fca1"**
+
+bits adalah format ringkas dari target proof-of-work yang menyimpan batas maksimum hash valid dalam 4 byte di header blok.
+
+--
+
+**"target": "00000000000000000001fca10000000000000000000000000000000000000000",**
+
+Target adalah angka batas 256-bit yang menentukan apakah sebuah hash blok valid atau tidak.
+Node akan menerima blok hanya jika: hash lebih kecil dari target. Kalau sebaliknya, maka blok ditolak.
+
+--
+
+**difficulty": 141668107417558.2**
+
+Difficulty adalah angka perbandingan yang menunjukkan seberapa kecil target sekarang dibanding target awal Bitcoin, untuk menggambarkan seberapa susah jaringan menambang blok.
+
+(Bits, target, dan difficulty adalah 3 hal yang sangat berkaitan dalam proses mining suatu blok. Dijelaskan dalam artikel terpisah).
