@@ -65,3 +65,4 @@ Ini adalah hash (sebuah kode unik yang berasal dari data header block, dijadikan
 
 --
 
+**"bits": "1701fca1"**
