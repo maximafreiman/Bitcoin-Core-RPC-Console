@@ -43,9 +43,9 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
   
   `"pruned": false,`
   
-  "warnings": [
-  ]
-}
+  `"warnings": [`
+  `]`
+`}`
 
 --
 
