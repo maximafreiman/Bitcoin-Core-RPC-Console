@@ -41,7 +41,8 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
   
   `"size_on_disk": 815042789810,`
   
-  "pruned": false,
+  `"pruned": false,`
+  
   "warnings": [
   ]
 }
