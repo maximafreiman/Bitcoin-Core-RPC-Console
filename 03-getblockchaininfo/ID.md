@@ -33,7 +33,8 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
   
   `"mediantime": 1769343081,`
   
-  "verificationprogress": 0.9999983113513633,
+  `"verificationprogress": 0.9999983113513633,`
+  
   "initialblockdownload": false,
   "chainwork": "000000000000000000000000000000000000000109def53174aa6446ccc9cab9",
   "size_on_disk": 815042789810,
