@@ -37,7 +37,8 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
   
   `"initialblockdownload": false,`
   
-  "chainwork": "000000000000000000000000000000000000000109def53174aa6446ccc9cab9",
+  `"chainwork": "000000000000000000000000000000000000000109def53174aa6446ccc9cab9",`
+  
   "size_on_disk": 815042789810,
   "pruned": false,
   "warnings": [
