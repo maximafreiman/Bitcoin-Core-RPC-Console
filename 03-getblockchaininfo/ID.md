@@ -17,7 +17,8 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
 
   `"chain": "main",`
   
-  "blocks": 933732,
+  `"blocks": 933732,`
+  
   "headers": 933732,
   "bestblockhash": "000000000000000000001ecd8963323c01c98909d02600c2c4e230a7f1856598",
   "bits": "1701fca1",
@@ -36,7 +37,7 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
 
 --
 
-**"chain": "main",**
+**"chain": "main"**
 
 Artinya node kita terhubung ke Mainnet Bitcoin. Ini jaringan Bitcoin asli, bukan:
 - test (testnet)
