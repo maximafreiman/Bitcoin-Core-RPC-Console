@@ -25,7 +25,8 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
   
   `"bits": "1701fca1",`
   
-  "target": "00000000000000000001fca10000000000000000000000000000000000000000",
+  `"target": "00000000000000000001fca10000000000000000000000000000000000000000",`
+  
   "difficulty": 141668107417558.2,
   "time": 1769348377,
   "mediantime": 1769343081,
