@@ -110,10 +110,17 @@ Waktu dalam satuan detik, kapan block ini tercipta. Dengan acuan UTC (Terhitung 
 
 **mediantime": 1769343081**
 
-mediantime adalah timestamp median dari 11 block sebelumnya yang digunakan node sebagai referensi waktu minimum untuk memvalidasi field time pada block baru. Kenapa 11? Untuk cari median (nilai tengah) pasti pakai kombinasi angka dengan batas ganjil, dan antara detik saat block terbaru tercipta dengan detik saat 11 block sebelumnya tercipta, itu sudah ideal. 1 hingga sebelas, angka tengahnya adalah 6. Maka median time diambil dari saat detik 6 block sebelumnya tercipta. Angka 6 muncul dari nilai tengah 11, seperti poin tadi. Bukan muncul begitu saja.
+Mediantime adalah timestamp median dari 11 block sebelumnya yang digunakan node sebagai referensi waktu minimum untuk memvalidasi field time pada block baru. Kenapa 11? Untuk cari median (nilai tengah) pasti pakai kombinasi angka dengan batas ganjil, dan antara detik saat block terbaru tercipta dengan detik saat 11 block sebelumnya tercipta, itu sudah ideal. 1 hingga sebelas, angka tengahnya adalah 6. Maka median time diambil dari saat detik 6 block sebelumnya tercipta. Angka 6 muncul dari nilai tengah 11, seperti poin tadi. Bukan muncul begitu saja.
 
 --
 
 **verificationprogress": 0.9999983113513633**
 
 Progress verifikasi seluruh PoW, rantai block, transaksi, dan UTXO sesuai aturan konsensus hingga ke block terbaru. Disini, terlihat proses verifikasinya adalah 0.999..., artinya adalah, node kita sudah 99% progressnya.
+
+--
+
+**"initialblockdownload": false,**
+
+Indikator yang menunjukkan apakah node kita masih dalam fase sinkronisasi awal blockchain atau sudah mengikuti jaringan secara normal.
+
