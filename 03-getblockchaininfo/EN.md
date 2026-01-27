@@ -11,11 +11,11 @@ Okay, so first of all, it’s quite simple. In the input field at the bottom, ju
 
 <img width="1366" height="726" alt="1" src="https://github.com/user-attachments/assets/e2a3d606-c367-4e4f-9822-71601a9b240d" />
 
-Maka, hasilnya akan keluar seperti ini. (Ini adalah data blockchain per tanggal 25 Januari 2026, jam 20:45 WIB)
+Then, the output will appear like this. (This is blockchain data as of January 25, 2026, at 13:45 UTC.)
 
 <img width="1366" height="725" alt="2" src="https://github.com/user-attachments/assets/6212c3e8-26cf-4a35-a3c1-bb2b2c8f9951" />
 
-Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artikel ini.
+Let’s break down the data shown here and examine everything in detail in this single article.
 
   `"chain": "main",`
   
@@ -55,52 +55,53 @@ Yuk kita coba bedah data yang ada disini dan kita telaah semuanya dalam 1 artike
 
 **"chain": "main"**
 
-Artinya node kita terhubung ke Mainnet Bitcoin. Ini jaringan Bitcoin asli, bukan:
+This means our node is connected to the Bitcoin Mainnet.
+This is the real Bitcoin network, not:
 - test (testnet)
-- regtest (lokal)
-Semua transaksi & blok di sini “nyata” secara ekonomi
+- regtest (local)
+All transactions and blocks on this network are economically real.
 
 --
 
 **"blocks": 933732**
 
-Ini adalah jumlah blok yang sudah kamu simpan dan validasi penuh
+This is the total number of blocks that your node has already stored and fully validated.
 
 --
 
 **"headers": 933732**
 
-Jumlah block header yang diketahui node
+This is the number of block headers known by the node.
 
-Header = metadata blok (hash, waktu, target, nonce, dll)
-Biasanya lebih cepat didownload daripada blok penuh. Meski begitu, jumlah pasti sama dengan "blocks"
+A block header is the block’s metadata (hash, timestamp, target, nonce, etc.).
+Headers are usually downloaded faster than full blocks.
+Even so, the total count should exactly match the blocks value.
 
 --
 
 **"bestblockhash": 000000000000000000001ecd8963323c01c98909d02600c2c4e230a7f1856598**
 
-Ini adalah hash (sebuah kode unik yang berasal dari data header block, dijadikan satu data dalam bentuk kode acak), dari blok terbaru di ujung rantai yang node kita anggap valid.
+This is the hash (a unique code derived from the block header data, combined into a single cryptographic value) of the latest block at the tip of the chain that our node considers valid.
 
 --
 
 **"bits": "1701fca1"**
 
-bits adalah format ringkas dari target proof-of-work yang menyimpan batas maksimum hash valid dalam 4 byte di header blok.
+bits is a compact representation of the proof-of-work target that stores the maximum valid hash threshold in 4 bytes within the block header.
 
 --
 
 **"target": "00000000000000000001fca10000000000000000000000000000000000000000",**
 
-Target adalah angka batas 256-bit yang menentukan apakah sebuah hash blok valid atau tidak.
-Node akan menerima blok hanya jika: hash lebih kecil dari target. Kalau sebaliknya, maka blok ditolak.
-
+The target is a 256-bit threshold number that determines whether a block hash is valid or not.
+A node will only accept a block if its hash is lower than the target. If it is higher, the block is rejected.
 --
 
 **difficulty": 141668107417558.2**
 
-Difficulty adalah angka perbandingan yang menunjukkan seberapa kecil target sekarang dibanding target awal Bitcoin, untuk menggambarkan seberapa susah jaringan menambang blok.
+Difficulty is a relative value that shows how much smaller the current target is compared to Bitcoin’s original target, describing how hard it is for the network to mine a block.
 
-(Bits, target, dan difficulty adalah 3 hal yang sangat berkaitan dalam proses mining suatu blok. Akan dijelaskan dalam artikel terpisah).
+(Bits, target, and difficulty are three closely related concepts in the block mining process. They will be explained in a separate article.)
 
 --
 
