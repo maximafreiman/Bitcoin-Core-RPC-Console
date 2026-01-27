@@ -107,43 +107,47 @@ Difficulty is a relative value that shows how much smaller the current target is
 
 **time": 1769348377**
 
-Waktu dalam satuan detik, kapan block ini tercipta. Dengan acuan UTC (Terhitung sejak Unix epoch (1 Januari 1970 00:00:00 UTC) sebagai titik referensi waktu yang disepakati.)
+This is the time, expressed in seconds, when the block was created, using UTC as the reference.
+It is calculated from the Unix epoch (January 1, 1970, 00:00:00 UTC) as the agreed-upon time reference.
 
 --
 
 **mediantime": 1769343081**
 
-Mediantime adalah timestamp median dari 11 block sebelumnya yang digunakan node sebagai referensi waktu minimum untuk memvalidasi field time pada block baru. Kenapa 11? Untuk cari median (nilai tengah) pasti pakai kombinasi angka dengan batas ganjil, dan antara detik saat block terbaru tercipta dengan detik saat 11 block sebelumnya tercipta, itu sudah ideal. 1 hingga sebelas, angka tengahnya adalah 6. Maka median time diambil dari saat detik 6 block sebelumnya tercipta. Angka 6 muncul dari nilai tengah 11, seperti poin tadi. Bukan muncul begitu saja.
+Mediantime is the median timestamp of the previous 11 blocks, which the node uses as the minimum time reference when validating the time field of a new block. Why 11? To determine a median (the middle value), an odd number of samples is required. The range between the timestamp of the newest block and those of the previous 11 blocks is considered ideal. With 11 values, the middle position is the 6th value. Therefore, the median time is taken from the timestamp of the block that was mined 6 blocks before the current one. The number 6 does not appear arbitrarily, it comes directly from the midpoint of 11, as explained above.
 
 --
 
 **verificationprogress": 0.9999983113513633**
 
-Progress verifikasi seluruh PoW, rantai block, transaksi, dan UTXO sesuai aturan konsensus hingga ke block terbaru. Disini, terlihat proses verifikasinya adalah 0.999..., artinya adalah, node kita sudah 99% progressnya.
+This represents the verification progress of the entire proof-of-work, block chain, transactions, and UTXO set according to consensus rules up to the latest block. Here, the verification progress is shown as 0.999…, which means our node has completed approximately 99% of the verification process.
 
 --
 
 **"initialblockdownload": false,**
 
-Indikator yang menunjukkan apakah node kita masih dalam fase sinkronisasi awal blockchain atau sudah mengikuti jaringan secara normal. Kalau `true`, berarti masih proses. Kalau `false` berarti proses IBD sudah selesai dan sedang melakukan verifikasi semua hal pada block terbaru.
+This indicator shows whether our node is still in the initial blockchain synchronization phase or has already caught up and is operating normally with the network.
+
+If it is set to `true`, the node is still in the process.
+If it is `false`, the Initial Block Download (IBD) process is complete, and the node is now validating everything on the latest blocks.
 
 --
 
 **size_on_disk": 815042789810,**
 
-total ukuran data blockchain yang sudah disimpan node kita di disk kita (block, index, dan file terkait), dalam byte. 815042789810 bytes artinya, atau kalau dikonversi lagi = 815 GB.
+This is the total size of blockchain data that our node has stored on disk (blocks, indexes, and related files), measured in bytes. 815,042,789,810 bytes, which converts to approximately 815 GB.
 
 --
 
 **pruned": false,**
 
-Ini menunjukkan apakah node kamu berjalan dalam mode pruning (menghapus block lama) atau menyimpan blockchain penuh. `false` artinya full node arsip, menyimpan semua block dari genesis sampai sekarang di disk. Kalau `true` artinya pruned node. Hanya menyimpan block terbaru (sesuai pengaturan yang kita set), block lama dihapus setelah diverifikasi.
+This indicates whether your node is running in pruning mode (removing old blocks) or storing the full blockchain. If it is set to `false`, the node is an archival full node, storing all blocks from genesis to the present on disk. If it is `true`, the node is a pruned node, which only keeps the most recent blocks (according to the configured limit), and older blocks are deleted after verification.
 
 --
 
 **warnings": []**
 
-Ini adalah bagian peringatan pada node kita, kalau kosong, berarti aman. Kemunculan peringatan ini tergantung pada alert apa yang muncul nanti, entah misalnya low disk, atau ada chain fork, dll.
+This is the warning section of our node. If it is empty, it means everything is operating safely. Warnings will appear here depending on the situation, such as low disk space, a detected chain fork, or other node-related alerts.
 
 ----------------------------------------------------------------------------------------------------
 
