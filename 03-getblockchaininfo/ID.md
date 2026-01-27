@@ -98,4 +98,22 @@ Node akan menerima blok hanya jika: hash lebih kecil dari target. Kalau sebalikn
 
 Difficulty adalah angka perbandingan yang menunjukkan seberapa kecil target sekarang dibanding target awal Bitcoin, untuk menggambarkan seberapa susah jaringan menambang blok.
 
-(Bits, target, dan difficulty adalah 3 hal yang sangat berkaitan dalam proses mining suatu blok. Dijelaskan dalam artikel terpisah).
+(Bits, target, dan difficulty adalah 3 hal yang sangat berkaitan dalam proses mining suatu blok. Akan dijelaskan dalam artikel terpisah).
+
+--
+
+**time": 1769348377**
+
+Waktu dalam satuan detik, kapan block ini tercipta. Dengan acuan UTC (Terhitung sejak Unix epoch (1 Januari 1970 00:00:00 UTC) sebagai titik referensi waktu yang disepakati.)
+
+--
+
+**mediantime": 1769343081**
+
+mediantime adalah timestamp median dari 11 block sebelumnya yang digunakan node sebagai referensi waktu minimum untuk memvalidasi field time pada block baru. Kenapa 11? Untuk cari median (nilai tengah) pasti pakai kombinasi angka dengan batas ganjil, dan antara detik saat block terbaru tercipta dengan detik saat 11 block sebelumnya tercipta, itu sudah ideal. 1 hingga sebelas, angka tengahnya adalah 6. Maka median time diambil dari saat detik 6 block sebelumnya tercipta. Angka 6 muncul dari nilai tengah 11, seperti poin tadi. Bukan muncul begitu saja.
+
+--
+
+**verificationprogress": 0.9999983113513633**
+
+Progress verifikasi seluruh PoW, rantai block, transaksi, dan UTXO sesuai aturan konsensus hingga ke block terbaru. Disini, terlihat proses verifikasinya adalah 0.999..., artinya adalah, node kita sudah 99% progressnya.
