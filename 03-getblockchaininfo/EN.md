@@ -151,6 +151,8 @@ This is the warning section of our node. If it is empty, it means everything is 
 
 ----------------------------------------------------------------------------------------------------
 
-So, ini adalah bagaimana cara kita melakukan verifikasi dasar pada kondisi terbaru aktivitas node dalam proses verifikasi blockchain. And yes, sekalian kita bahas informasi apa saja yang muncul. Sekian, terima kasih.
+So, this is how we perform a basic verification of our node’s latest activity during the blockchain verification process. And yes, we also covered the key information that appears there.
+
+That’s all for this session. Thank you.
 
 
