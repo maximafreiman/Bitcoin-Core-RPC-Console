@@ -122,5 +122,5 @@ Progress verifikasi seluruh PoW, rantai block, transaksi, dan UTXO sesuai aturan
 
 **"initialblockdownload": false,**
 
-Indikator yang menunjukkan apakah node kita masih dalam fase sinkronisasi awal blockchain atau sudah mengikuti jaringan secara normal.
+Indikator yang menunjukkan apakah node kita masih dalam fase sinkronisasi awal blockchain atau sudah mengikuti jaringan secara normal. Kalau `true`, berarti masih proses. Kalau `false` berarti proses IBD sudah selesai dan sedang melakukan verifikasi semua hal pada block terbaru.
 
