@@ -124,3 +124,26 @@ Progress verifikasi seluruh PoW, rantai block, transaksi, dan UTXO sesuai aturan
 
 Indikator yang menunjukkan apakah node kita masih dalam fase sinkronisasi awal blockchain atau sudah mengikuti jaringan secara normal. Kalau `true`, berarti masih proses. Kalau `false` berarti proses IBD sudah selesai dan sedang melakukan verifikasi semua hal pada block terbaru.
 
+--
+
+**size_on_disk": 815042789810,**
+
+total ukuran data blockchain yang sudah disimpan node kita di disk kita (block, index, dan file terkait), dalam byte. 815042789810 bytes artinya, atau kalau dikonversi lagi = 815 GB.
+
+--
+
+**pruned": false,**
+
+Ini menunjukkan apakah node kamu berjalan dalam mode pruning (menghapus block lama) atau menyimpan blockchain penuh. `false` artinya full node arsip, menyimpan semua block dari genesis sampai sekarang di disk. Kalau `true` artinya pruned node. Hanya menyimpan block terbaru (sesuai pengaturan yang kita set), block lama dihapus setelah diverifikasi.
+
+--
+
+**warnings": []**
+
+Ini adalah bagian peringatan pada node kita, kalau kosong, berarti aman. Kemunculan peringatan ini tergantung pada alert apa yang muncul nanti, entah misalnya low disk, atau ada chain fork, dll.
+
+----------------------------------------------------------------------------------------------------
+
+So, ini adalah bagaimana cara kita melakukan verifikasi dasar pada kondisi terbaru aktivitas node dalam proses verifikasi blockchain. And yes, sekalian kita bahas informasi apa saja yang muncul. Sekian, terima kasih.
+
+
