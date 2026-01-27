@@ -7,7 +7,7 @@ Let’s explore what kind of information we can get when using this command.
 For instructions on how to open the RPC Console, please refer to Chapter 1. (https://github.com/maximafreiman/Bitcoin-Core-RPC-Console/blob/main/01-Introduction/ID.md).
 
 
-Okay, so first of all, it’s quite simple. In the input field at the bottom, just type `getblockchaininfo`. all lowercase, with no spaces.
+Okay, so first of all, it’s quite simple. In the input field at the bottom, just type `getblockchaininfo`. All lowercase, with no spaces.
 
 <img width="1366" height="726" alt="1" src="https://github.com/user-attachments/assets/e2a3d606-c367-4e4f-9822-71601a9b240d" />
 
