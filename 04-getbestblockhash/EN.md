@@ -1,1 +1,3 @@
+getbestblockhash
+---
 test
