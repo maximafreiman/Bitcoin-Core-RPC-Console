@@ -1,3 +1,3 @@
 getbestblockhash
 ---
-Oke kali ini kita akan ke prompt RPC Console selanjutnya, yaitu `getbestblockhash`.
+Okay, in this section we will go to the next RPC Console prompt, namely `getbestblockhash`.
