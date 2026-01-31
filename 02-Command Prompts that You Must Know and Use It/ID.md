@@ -133,7 +133,7 @@ Intinya: Ini adalah penerjemah bahasa mesin ke bahasa manusia.
 15. `sendrawtransaction "hex"`
 
 Fungsi: Mengirim transaksi ke jaringan Bitcoin. Setelah transaksi ditandatangani, command ini akan menyebarkannya ke node lain.
-Intinya: Ini adalah “cara menyebarkan ke dunia Bitcoin.”
+Intinya: Ini adalah “cara menyebarkan transaksi ke dunia Bitcoin.”
 
 **==UNTUK INFORMASI WALLET DAN MINING**
 
