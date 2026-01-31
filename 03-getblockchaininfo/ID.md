@@ -1,6 +1,6 @@
 getblockchaininfo
 ---
-Oke, jadi kita coba ke Command Prompt pertama ya kawan-kawan, yaitu 'getblockchaininfo'. getblockchaininfo adalah RPC command di Bitcoin Core / Bitcoin Knots yang menampilkan informasi kondisi blockchain lokal yang sedang dijalankan oleh node kita.
+Oke, jadi kita coba ke Command Prompt pertama ya kawan-kawan, yaitu `getblockchaininfo`. getblockchaininfo adalah RPC command di Bitcoin Core / Bitcoin Knots yang menampilkan informasi kondisi blockchain lokal yang sedang dijalankan oleh node kita.
 
 Kita coba ulik disini dapat informasi apa saja begitu kita pakai command prompt ini. Mengenai bagaimana cara buka RPC Console, bisa buka bab 1 (https://github.com/maximafreiman/Bitcoin-Core-RPC-Console/blob/main/01-Introduction/ID.md).
 
