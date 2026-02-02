@@ -76,7 +76,7 @@ Intinya: Ini adalah pengukur seberapa keras kerja miner di jaringan.
 
 6. `getnetworkinfo`
 
-Fungsi: Menampilkan informasi jaringan node. Menunjukkan versi sfotware Bitcoin Core atau Knots yang kita pakai, fitur jaringan yang aktif, dan status koneksi.
+Fungsi: Menampilkan informasi jaringan node. Menunjukkan versi software Bitcoin Core atau Knots yang kita pakai, fitur jaringan yang aktif, dan status koneksi.
 
 Intinya: Ini adalah identitas node kita di dunia Bitcoin.
 
@@ -169,5 +169,5 @@ Menunjukkan hashrate jaringan, difficulty, dan status mining node kita.
 Intinya: Ini adalah status produksi blok Bitcoin.
 
 
-Yak, demikianlah untuk command prompts yang bisa kita aplikasikan untuk tahap awal. Nanti mungkin aku juga akan aku kasih info mengenai beberapa prompt tambahan yang bisa kita pakai. Sekian, thank u.
+Yak, demikianlah untuk command prompts yang bisa kita aplikasikan untuk tahap awal. Nanti mungkin aku juga akan kasih info mengenai beberapa prompt tambahan yang bisa kita pakai. Sekian, thank u.
 
